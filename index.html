@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LANDMARK Digital Perkasa | Premium Event Experiences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <div class="nav-dot active" data-section="0"></div>
+        <div class="nav-dot" data-section="1"></div>
+        <div class="nav-dot" data-section="2"></div>
+        <div class="nav-dot" data-section="3"></div>
+        <div class="nav-dot" data-section="4"></div>
+    </div>
+
+    <div class="parallax-wrapper" id="parallaxContainer">
+        
+        <!-- Section 1: Hero -->
+        <section class="relative bg-gradient-to-b from-red-950 via-red-900 to-black">
+            <!-- Parallax Background Layers -->
+            <div class="parallax-layer layer-back">
+                <div class="absolute inset-0 gradient-mesh"></div>
+                <div class="absolute top-20 left-10 w-96 h-96 bg-red-600 rounded-full blur-3xl opacity-20"></div>
+                <div class="absolute bottom-20 right-10 w-[500px] h-[500px] bg-white rounded-full blur-3xl opacity-10"></div>
+            </div>
+            
+            <div class="parallax-layer layer-mid">
+                <div class="geo-shape triangle top-1/4 right-1/4 float-anim"></div>
+                <div class="geo-shape circle bottom-1/4 left-1/4 float-anim-reverse"></div>
+                <div class="absolute top-1/3 left-1/3 w-32 h-32 border border-red-500/30 rotate-45 float-anim"></div>
+            </div>
+            
+            <div class="parallax-layer layer-front flex items-center justify-center px-6">
+                <div class="text-center max-w-6xl mx-auto z-10">
+                    <div class="mb-6 overflow-hidden">
+                        <p class="text-red-400 tracking-[0.5em] uppercase text-sm font-semibold reveal-text" id="heroSubtitle">
+                            Premium Event Experiences
+                        </p>
+                    </div>
+                    
+                    <h1 class="font-display text-[12vw] md:text-[10rem] font-bold leading-none mb-6 tracking-tighter">
+                        <span class="block text-white overflow-hidden">
+                            <span class="char-reveal" id="landText">LAND</span>
+                        </span>
+                        <span class="block overflow-hidden">
+                            <span class="gradient-text char-reveal" id="markText" style="transition-delay: 0.2s">MARK</span>
+                        </span>
+                    </h1>
+
+                    <!-- Brand Name -->
+                    <div class="overflow-hidden mb-8">
+                       <p class="brand-fullname" id="brandFullName">
+                            Landmark Digital Perkasa
+                        </p>
+                    </div>
+
+                    
+                    <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed fade-in-up" id="heroDesc">
+                        We transform spaces into unforgettable experiences. Where vision meets precision, and moments become monuments.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up" id="heroButtons" style="transition-delay: 0.3s">
+                        <button class="btn-liquid px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full transition-all transform hover:scale-105 pulse-glow">
+                            Explore Events
+                        </button>
+                        <button class="px-8 py-4 glass text-white font-semibold rounded-full hover:bg-white/10 transition-all">
+                            Watch Showreel
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 bounce-anim">
+                <span class="text-xs tracking-widest uppercase">Scroll</span>
+                <div class="w-px h-12 bg-gradient-to-b from-red-500 to-transparent"></div>
+            </div>
+        </section>
+
+        <!-- Section 2: About/Stats -->
+        <section class="relative bg-black">
+            <div class="parallax-layer layer-back">
+                <div class="absolute inset-0 bg-gradient-to-br from-red-950/50 to-black"></div>
+                <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.2),transparent_50%)]"></div>
+            </div>
+            
+            <div class="parallax-layer layer-mid">
+                <div class="absolute top-1/4 left-10 w-64 h-64 border border-red-500/20 rounded-full"></div>
+                <div class="absolute bottom-1/4 right-20 w-48 h-48 bg-red-600/10 rounded-full blur-2xl"></div>
+            </div>
+            
+            <div class="parallax-layer layer-front container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <div class="inline-block px-4 py-2 glass-red rounded-full text-red-400 text-sm font-semibold tracking-wider uppercase mb-4 reveal-text" id="aboutLabel">
+                            About Us
+                        </div>
+                        <h2 class="font-display text-5xl md:text-7xl font-bold leading-tight">
+                            <span class="word-split" id="aboutTitle1">
+                                <span>Crafting</span>
+                            </span>
+                            <span class="text-red-500 word-split" id="aboutTitle2" style="transition-delay: 0.1s">
+                                <span>Legendary</span>
+                            </span>
+                            <br>
+                            <span class="word-split" id="aboutTitle3" style="transition-delay: 0.2s">
+                                <span>Moments</span>
+                            </span>
+                        </h2>
+                        <p class="text-gray-400 text-lg leading-relaxed fade-in-up" id="aboutDesc">
+                            For over a decade, LANDMARK has been at the forefront of event innovation. We don't just organize events; we architect experiences that resonate, inspire, and endure. From intimate gatherings to monumental celebrations, our team brings unparalleled creativity and meticulous execution.
+                        </p>
+                        <div class="flex gap-4 pt-4">
+                            <div class="h-1 w-20 bg-red-600 rounded-full line-reveal" id="aboutLine1"></div>
+                            <div class="h-1 w-10 bg-red-600/50 rounded-full line-reveal" id="aboutLine2" style="transition-delay: 0.2s"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 stagger-children" id="statsGrid">
+                        <div class="glass-red p-8 rounded-3xl text-center transform hover:scale-105 transition-transform duration-500">
+                            <div class="stat-number font-display text-5xl font-bold text-white mb-2" data-target="500">0</div>
+                            <div class="text-red-400 text-sm uppercase tracking-wider">Events Hosted</div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl text-center transform hover:scale-105 transition-transform duration-500 mt-12">
+                            <div class="stat-number font-display text-5xl font-bold text-white mb-2" data-target="98">0</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider">% Satisfaction</div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl text-center transform hover:scale-105 transition-transform duration-500">
+                            <div class="stat-number font-display text-5xl font-bold text-white mb-2" data-target="50">0</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider">Global Venues</div>
+                        </div>
+                        <div class="glass-red p-8 rounded-3xl text-center transform hover:scale-105 transition-transform duration-500 mt-12">
+                            <div class="stat-number font-display text-5xl font-bold text-white mb-2" data-target="12">0</div>
+                            <div class="text-red-400 text-sm uppercase tracking-wider">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Services -->
+        <section class="relative bg-gradient-to-b from-black via-red-950/30 to-black">
+            <div class="parallax-layer layer-back">
+                <div class="absolute inset-0 opacity-30">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+            
+            <div class="parallax-layer layer-mid">
+                <div class="absolute top-20 right-1/4 w-2 h-32 bg-gradient-to-b from-red-500 to-transparent"></div>
+                <div class="absolute bottom-20 left-1/4 w-2 h-32 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+            
+            <div class="parallax-layer layer-front container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-5xl md:text-7xl font-bold mb-6">
+                        <span class="word-split" id="servicesTitle1">
+                            <span>Our</span>
+                        </span>
+                        <span class="text-red-500 word-split" id="servicesTitle2" style="transition-delay: 0.15s">
+                            <span>Services</span>
+                        </span>
+                    </h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-lg fade-in-up" id="servicesDesc">
+                        Comprehensive event solutions tailored to your vision
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto stagger-children" id="servicesGrid">
+                    <!-- Service Card 1 -->
+                    <div class="event-card glass-red p-8 rounded-3xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/20 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-2xl transform group-hover:rotate-12 transition-transform">
+                                ✦
+                            </div>
+                            <h3 class="font-display text-2xl font-bold mb-4 reveal-text">Corporate Events</h3>
+                            <p class="text-gray-400 mb-6">Elevate your brand with meticulously planned conferences, product launches, and corporate galas that leave lasting impressions.</p>
+                            <a href="#" class="text-red-400 font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                Learn more <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="event-card glass p-8 rounded-3xl relative overflow-hidden group mt-0 md:mt-12">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-white/20 transform group-hover:rotate-12 transition-transform">
+                                ♦
+                            </div>
+                            <h3 class="font-display text-2xl font-bold mb-4 reveal-text">Private Celebrations</h3>
+                            <p class="text-gray-400 mb-6">From weddings to milestone birthdays, we create intimate, personalized experiences that reflect your unique story and style.</p>
+                            <a href="#" class="text-white font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                Learn more <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="event-card glass-red p-8 rounded-3xl relative overflow-hidden group mt-0 md:mt-24">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/20 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-2xl transform group-hover:rotate-12 transition-transform">
+                                ✹
+                            </div>
+                            <h3 class="font-display text-2xl font-bold mb-4 reveal-text">Festival Production</h3>
+                            <p class="text-gray-400 mb-6">Large-scale event production with cutting-edge technology, immersive installations, and seamless logistics management.</p>
+                            <a href="#" class="text-red-400 font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                Learn more <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Featured Events -->
+        <section class="relative bg-black overflow-hidden">
+            <div class="parallax-layer layer-back">
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23dc2626%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+            </div>
+            
+            <div class="parallax-layer layer-front container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div>
+                        <h2 class="font-display text-5xl md:text-7xl font-bold mb-4">
+                            <span class="word-split" id="featuredTitle1">
+                                <span>Featured</span>
+                            </span>
+                            <span class="text-red-500 word-split" id="featuredTitle2" style="transition-delay: 0.1s">
+                                <span>Events</span>
+                            </span>
+                        </h2>
+                        <p class="text-gray-400 text-lg fade-in-up" id="featuredDesc">Recent experiences we've crafted</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-6 py-3 border border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white transition-all fade-in-up" id="featuredBtn">
+                        View All Projects
+                    </button>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 stagger-children" id="eventsGrid">
+                    <!-- Event 1 -->
+                    <div class="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-red-900/20 group-hover:bg-red-900/40 transition-colors duration-500"></div>
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80')] bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 z-20 w-full">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="px-3 py-1 bg-red-600 text-xs font-bold rounded-full">CORPORATE</span>
+                                <span class="text-gray-300 text-sm">Dec 2024</span>
+                            </div>
+                            <h3 class="font-display text-3xl font-bold mb-2 group-hover:text-red-400 transition-colors reveal-text">Tech Summit 2024</h3>
+                            <p class="text-gray-300 line-clamp-2">A three-day immersive technology conference hosting 5,000+ attendees with holographic presentations and AI-powered networking.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer md:mt-12">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-red-900/20 group-hover:bg-red-900/40 transition-colors duration-500"></div>
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80')] bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 z-20 w-full">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="px-3 py-1 bg-white/20 text-xs font-bold rounded-full backdrop-blur-sm">FESTIVAL</span>
+                                <span class="text-gray-300 text-sm">Nov 2024</span>
+                            </div>
+                            <h3 class="font-display text-3xl font-bold mb-2 group-hover:text-red-400 transition-colors reveal-text">Crimson Nights</h3>
+                            <p class="text-gray-300 line-clamp-2">An avant-garde music and arts festival featuring immersive light installations and multi-sensory performance spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Contact/CTA -->
+        <section class="relative bg-gradient-to-t from-red-950 via-black to-black">
+            <div class="parallax-layer layer-back">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(220,38,38,0.3),transparent_70%)]"></div>
+                <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-red-600/20 to-transparent"></div>
+            </div>
+            
+            <div class="parallax-layer layer-mid">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 border border-red-500/10 rounded-full animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-64 h-64 border border-white/10 rounded-full animate-pulse" style="animation-delay: 1s"></div>
+            </div>
+            
+            <div class="parallax-layer layer-front container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="font-display text-5xl md:text-8xl font-bold mb-8 leading-tight">
+                        <span class="word-split" id="ctaTitle1">
+                            <span>Let's Create</span>
+                        </span>
+                        <br>
+                        <span class="text-red-500 word-split" id="ctaTitle2" style="transition-delay: 0.2s">
+                            <span>Something Epic</span>
+                        </span>
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto fade-in-up" id="ctaDesc">
+                        Ready to transform your vision into reality? Let's discuss how we can make your next event unforgettable.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16 fade-in-up" id="ctaButtons">
+                        <button class="btn-liquid px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 pulse-glow">
+                            Start Your Project
+                        </button>
+                        <button class="px-10 py-5 glass text-white font-bold rounded-full text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+                            <span>Schedule a Call</span>
+                        </button>
+                    </div>
+                    
+                    <div class="glass-red rounded-3xl p-8 md:p-12 max-w-3xl mx-auto stagger-children" id="contactInfo">
+                        <div class="grid md:grid-cols-3 gap-8 text-left">
+                            <div class="fade-in-up">
+                                <h4 class="text-red-400 font-semibold mb-2">Email</h4>
+                                <p class="text-white text-sm md:text-base">landmarkdigital@gmail.com</p>
+                            </div>
+                            <div class="fade-in-up" style="transition-delay: 0.1s">
+                                <h4 class="text-red-400 font-semibold mb-2">Phone</h4>
+                                <p class="text-white text-sm md:text-base">+1 (555) 234-5678</p>
+                            </div>
+                            <div class="fade-in-up" style="transition-delay: 0.2s">
+                                <h4 class="text-red-400 font-semibold mb-2">Location</h4>
+                                <p class="text-white text-sm md:text-base">Bandung • Jawabarat • Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm fade-in-up" id="footer">
+                        <p>&copy; 2024 LANDMARK Events. All rights reserved.</p>
+                        <div class="flex gap-6">
+                            <a href="#" class="hover:text-red-400 transition-colors">Instagram</a>
+                            <a href="#" class="hover:text-red-400 transition-colors">LinkedIn</a>
+                            <a href="#" class="hover:text-red-400 transition-colors">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
